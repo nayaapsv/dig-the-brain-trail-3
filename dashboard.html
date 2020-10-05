@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <link
+  rel="icon"
+  type="image/png"
+  sizes="33x32"
+  href="logo/2.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="logo/2.png"
+/>
+      <title>
+            Dig the Brain
+        </title>
+        <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+
+        <link rel = "stylesheet"
+        type = "text/css"
+        href = "style.css" />
+
+    </head>
+    
+    <body>
+        
+        <div class ="header">
+        <div class="logo"><a href = "dashboard.html"><img src="logo/1.png"  width="350" height="200"></a></div> </div>
+        </div>
+
+
+      <ul>
+        <li class="dropdown">
+          
+          <a href="dashboard.html" target="_blank">HOME</a>
+            
+         
+         
+          <a href="javascript:void(0)" class="dropbtn">Workshops</a>
+          <div class="dropdown-content">
+            <a href="workshops.html" target="_blank">About our Workshops</a>
+            <a href="workshop_reg.html" target="_blank">Register for a workshop</a>
+            <a href="topics.html" target="_blank">Topics</a>
+          </div>
+        </li>
+         
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Competitions</a>
+          <div class="dropdown-content">
+            <a href="coderquest_reg.html">Registeration</a>
+            <a href="coderquest.html">Coder Quest</a>
+            <a href="hallofstarts.html">Hall of stars</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">About</a>
+            <div class="dropdown-content">
+              <a href="#About">About Us</a>
+              <a href="#Our Goal">Our goal</a>
+              <a href="#Topics">Team</a>
+            </div>
+          </li>
+    </ul>
+   
+    
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"><img src="logo/2.png"  width="50" height="50">  Dig the Brain </div>
+  <img src="adds/workshop.png" style="width:100%" height="700px">
+  <div class="text">Dig The Brain</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><img src="logo/2.png"  width="50" height="50">  Dig the Brain </div>
+  <img src="adds/coderquest.png" style="width:100%" height="700px">
+  <div class="text">Workshop's</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><img src="logo/2.png"  width="50" height="50">  Dig the Brain </div>
+  <img src="adds/alert.png" style="width:100%" height="700px" >
+  <div class="text">Coder Quest</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><img src="logo/2.png"  width="50" height="50">  Dig the Brain </div>
+  <img src="adds/alert.png" style="width:100%" height="700px" >
+  <div class="text">And of course FUN !!</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+  <h2>       -  </h2>
+
+  <div class="events" >
+  
+    <a href = "workshop_reg.html"><img src="adds/alert.png" width="300" height="400"></a>
+    <a href = "workshop_reg.html"><img src="adds/coderquest.png" width="300" height="400"></a>
+    <a href = "workshop_reg.html"><img src="adds/workshop.png" width="300" height="400"></a>
+
+  </div>  
+
+
+
+  <h2>-</h2>
+
+
+
+  <h2>Welcome to Dig The Brain</h2>
+ 
+  <div class="video_intro" >  
+  <video width="800" height="600" >
+    <source src="intro.mp4" type="video/mp4" >
+  </video>
+</div>
+
+  <hr width 200px >
+
+        <div class = "grid">
+          
+          <div id = "About" class = "item">
+          <button class = aboutButton type=button >About Us</button>
+          <p>
+          Let's Learn
+         </p>
+        </div>
+          <div id = "Our Goal" class = "item">
+              <button class = goalButton type=button >Our Goal</button>
+              <p>
+              Let's Learn
+              Let's Do it
+              </p>
+            </div>
+            <address>
+              <h2>For any Clarifications send a mail <a href="mailto:digthebrain@gmail.com">digthebrain@gmail</a></h2>
+            </address>
+          <a href = "https://www.youtube.com/channel/UCeYcE1iKXGTO6klykfjT3Xw?view_as=subscriber"><img src="icons/youtube.jpg" width="50" height="50"></a>
+           <a href = "https://www.youtube.com/channel/UCeYcE1iKXGTO6klykfjT3Xw?view_as=subscriber"><img src="icons/fb.png" width="50" height="50"></a>
+        
+          </div>
+        
+    </body>
+</html>

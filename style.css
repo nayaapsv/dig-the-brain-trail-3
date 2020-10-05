@@ -1,0 +1,401 @@
+/* #4EBDE7 - blue
+   #6a50a7 - purple
+   #FF5B87 - pink
+   font-family: 'Didact Gothic';
+*/
+*{
+  font-family: 'Didact Gothic';
+  font-weight: 900;
+}
+
+
+h1{
+   color: rgb(255, 244, 220);
+   text-align: center;
+   text-transform: capitalize;
+   font-style: initial;
+   font-family: 'Didact Gothic';
+   font-size: 50px;
+}
+
+.logo{
+  display: flex;
+  justify-content: left;
+  height: 150;
+}
+
+h2{
+font-family: 'Didact Gothic';
+ text-align: center;
+font-size: 30px;
+}
+body{
+ /* background-image: url(backdrop1.PNG);*/
+ opacity: 3;
+ 
+}
+
+.header{
+    border: dashed;
+    background: repeating-linear-gradient(30deg, 
+    #4EBDE7 ,#4EBDE7 30px,
+    #6a50a7 0, #6a50a7 100px);
+    margin-bottom: 1px;
+    height: 150;
+}
+.header image{
+    align-content: center;
+    justify-content: space-evenly;  
+}
+
+.hero{
+    opacity: 10;
+}
+
+.forms{
+    align-content: stretch;
+    display: flex;
+    justify-content:space-between; 
+}
+
+.grid{
+    display: flex;
+    justify-content:space-around; 
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 20px;
+    color: azure;
+    background-color: black;
+}
+
+.grid img{
+  border-radius: 50px;
+}
+
+/*typing text styling*/
+@keyframes typing {
+	from { width: 0 }
+}
+
+@keyframes caret {
+	100% { border-right-color: transparent; }
+}
+
+h3 {
+	font: bold 200% Consolas, Monaco, monospace;
+	/*width: 8.25em;*/
+	width: 15ch;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: .05em solid;
+	animation: typing 5s steps(17),
+             caret 5s steps(1) infinite;
+             
+}
+
+/* BUTTON STYLING */
+
+.aboutButton{
+
+    opacity:3; 
+    width: 450px;
+    height: 200px;
+    background-color:#FF5B87;
+    color: #000000;
+    font-size: 40px;
+    border-radius: 30px;
+    font-weight:bold;
+    -webkit-transition-duration: 0.9s; /* Safari */
+    transition-duration: 0.9s;
+    margin: 4px 2px;
+    font-family: 'Didact Gothic';
+    opacity: 3;
+}
+
+.goalButton{
+    opacity:3; 
+    width: 450px;
+    height: 200px;
+    background-color:#4EBDE7;
+    color: #000000;
+    font-size: 50px;
+    border-radius: 30px;
+    font-weight:bold;
+    -webkit-transition-duration: 0.9s; /* Safari */
+    transition-duration: 0.9s;
+    margin: 4px 2px;
+    font-family: 'Didact Gothic';
+    font-variant: small-caps;
+}
+
+.topicsButton{
+    opacity:3; 
+    width: 200px;
+    height: 200px;
+    background-color:#FF5B87;
+    color: #000000;
+    font-size: 45px;
+    border-radius: 30px;
+    font-weight:bold;
+    -webkit-transition-duration: 0.9s; /* Safari */
+    transition-duration: 0.9s;
+    margin: 4px 2px;
+    font-family: fantasy;
+    font-variant: small-caps;
+}
+
+/*adds*/
+.ads{
+  display: block;
+    background-color: #ffffff;
+    display: flex;
+    justify-content:space-between; 
+    border-radius: 30px;
+    border: 2px;
+    border-top-style: dotted;
+    border-right-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: dotted;
+}
+
+.events{
+  border: dashed;
+    display: block;
+    display: flex;
+    justify-content:space-around; 
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.events img{
+  border-radius: 30px;
+}
+
+  
+
+/*videos*/
+.video_intro{
+    display: block;
+    background-color:#6a50a7;
+    display: flex;
+    justify-content: space-around;
+     border-radius: 30px;
+     margin-left: 100px;
+     margin-right: 100px;
+}
+
+
+/*Workshop page design*/
+
+.about_workshop{
+  display: block;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around; 
+  border-radius: 30px;
+  border: 2px;
+}
+
+.about_workshopbutton{
+  display: block;
+  font-family: cursive;
+  background-color: #4EBDE7;
+  color: black;
+  font-size: 30px;
+  -webkit-filter: drop-shadow(.1em .1em .1em rgba(0,0,0,.5));
+	filter: drop-shadow(.1em .1em .1em rgba(0,0,0,.5));
+  width: 700px;
+  height: 500px;
+  border-radius: 30px;
+}
+
+
+
+/* ITEMS */
+.item{
+    display: block;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 30px;
+    border: 2px;
+    
+}
+.item p{
+  
+    top: 50%;
+    left: 50%;
+    transform: translate(20%,-30%);
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0;
+    
+}
+.item:hover p{
+    opacity:3;
+    color : #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.item:hover button{
+  background-color: cornsilk;
+    opacity:0.11;
+    text-align: center; 
+}
+
+
+/* NAVIGATION */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#FF5B87;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    font-size: 36px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+li a, .dropbtn {
+    display: inline-block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color:black;
+    color: white;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FF5B87;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color:#4EBDE7;
+  color:black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*SLider*/
+.mySlides {
+  display: none;
+  }
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+ 
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  font-family: 'Didact Gothic';
+  padding: 45px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: #000000;
+  margin-top: 5px;
+ 
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000; 
+  font-family: 'Didact Gothic';
+  font-size: 29px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: antiquewhite;
+  border-radius: 80px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+ 
+}
+
+@-webkit-keyframes fade {
+  0%{
+    transform: skewX(0deg) translateX(-900px);
+}
+100%{
+    transform: skew(0deg);
+}
+
+}
+
+@keyframes fade {
+0%{
+    transform: skewX(0deg) translateX(-900px);
+}
+100%{
+    transform: skew(0deg);
+}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* #4EBDE7 - blue
+   #6a50a7 - purple
+   #FF5B87 - pink
+   font-family: 'Didact Gothic';
+*/
